@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&display=swap');
+/* Import de la font Syne depuis Google Fonts et on l'applique sur tous les éléments de la page */
+body * {
+    font-family: 'Syne', sans-serif;
+}
+/* On applique un gris plus clair sur les paragraphes */
+p {
+   color: #000000;
+}
+
+
+/* Changement header */
+#site-navigation-wrap .dropdown-menu>li>a {    
+    font-family: 'Syne', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+#site-navigation-wrap .dropdown-menu>li>a:hover {
+    font-family: 'Syne', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #000000 !important;
+}
