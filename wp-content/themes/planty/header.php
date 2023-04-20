@@ -27,14 +27,7 @@
 
 		<?php do_action( 'ocean_before_wrap' ); ?>
 
-		<div id="wrap" class="clr">
-
-			<?php do_action( 'ocean_top_bar' ); ?>
-
+	
+<!-- Mon header personnalisé -->
 			<?php do_action( 'ocean_header' ); ?>
 
-			<?php do_action( 'ocean_before_main' ); ?>
-
-			<main id="main" class="site-main clr"<?php oceanwp_schema_markup( 'main' ); ?> role="main">
-
-				<?php do_action( 'ocean_page_header' ); ?>

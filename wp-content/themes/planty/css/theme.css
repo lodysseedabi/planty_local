@@ -30,3 +30,9 @@ p {
     color: #000000;
     background-color: #ffffff;
  }
+
+ /* Formulaire de précommande */
+ .commande_form {
+    color: white;
+    font-size: 20px;
+ }
