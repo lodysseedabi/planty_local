@@ -10,17 +10,31 @@ p {
 
 
 /* Header */
-#site-navigation-wrap .dropdown-menu>li>a {    
-    font-family: 'Syne', sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-}
-
-#site-navigation-wrap .dropdown-menu>li>a:hover {
-    font-family: 'Syne', sans-serif;
+#site-navigation-wrap .dropdown-menu >li a:hover {
     font-size: 13px;
     font-weight: 600;
-    color: #000000 !important;
+}
+
+.after-header-content .after-header-content-inner {
+    display: table-cell;
+    vertical-align: middle;
+    height: 74px;
+    padding: 0, 50px;
+}
+
+.button-cde >a {
+    background-color: #DC9F96;
+    color: white;
+    font-size: 16px;
+    font-weight: 600 !important;
+    padding-left: 60px;
+    padding-right: 60px;
+    margin-left: 30px;
+}
+
+.button-cde a:hover{
+    background-color: #C02E44;
+    color: #ffffff !important;
 }
 
 /* Footer */
