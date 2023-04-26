@@ -1,11 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&display=swap');
 /* Import de la font Syne depuis Google Fonts et on l'applique sur tous les éléments de la page */
+
+/*GENERAL*/
+:root {
+    --main-color: #DC9F96;
+    /* var(--main-color) */
+    --second-color: #C02E44;
+    /* var(--second-color) */
+    --main-texte: #000000;
+    /* var(--main-texte) */
+    --second-texte: #ffffff;
+    /* var(--second-texte) */
+  }
+
 body * {
     font-family: 'Syne', sans-serif;
 }
 /* On applique un gris plus clair sur les paragraphes */
 p {
-   color: #000000;
+   color: var(--main-texte);
 }
 
 
@@ -23,30 +36,92 @@ p {
 }
 
 .button-cde >a {
-    background-color: #DC9F96;
-    color: white;
+    background-color:var(--main-color);
+    color: var(--second-texte);
     font-size: 16px;
     font-weight: 600 !important;
-    padding-left: 60px;
-    padding-right: 60px;
+    padding: 0 60px;
     margin-left: 30px;
 }
 
 .button-cde a:hover{
-    background-color: #C02E44;
-    color: #ffffff !important;
+    background-color: var(--second-color);
+    color: var(--second-texte) !important;
 }
 
 /* Footer */
 #site-footer {
     padding: 20px;
     text-align: center;
-    color: #000000;
-    background-color: #ffffff;
+    color: var(--main-texte);
+    background-color: var(--second-texte);
  }
 
  /* Formulaire de précommande */
- .commande_form {
-    color: white;
+ .section-commande {
+    border-top: var(--second-texte) solid 1px;
+    border-bottom: var(--second-texte) solid 1px;
+    padding-top: 30px;
+ }
+ 
+ .section-commande h2 {
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--second-texte) ;
+ }
+
+ .bloc-commande {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+ }
+
+ .bloc-commande .compteur{
+    padding: 12px 44px;
+    border-radius: 5px;
+ }
+
+ .bloc-fruit {
+    padding: 15px;
+ }
+
+ .nbr-fruit {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ }
+ 
+ .section-coordonnees {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 30px;
+ }
+
+ .section-coordonnees h2 {
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--second-texte) ;
+ }
+
+ .section-coordonnees p {
     font-size: 20px;
+    color: var(--second-texte) ;
+ }
+ 
+ .section-coordonnees .form {
+    margin-top: 10px;
+    padding: 18px 44px;
+    border-radius: 5px;
+ }
+
+ .bouton-cder {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+ }
+
+ .bloc-info {
+    border-right: var(--second-texte) solid 1px;
+    padding-right: 110px;
  }
