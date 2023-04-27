@@ -77,9 +77,63 @@ p {
  }
 
  .bloc-commande .compteur{
-    padding: 12px 44px;
+    padding: 12px 42px;
     border-radius: 5px;
+    height: 100%;
  }
+
+ input[type=number] {
+   height: 30px;
+}
+
+input[type=number]:hover::-webkit-inner-spin-button {  
+   width: 14px;
+   height: 30px;
+}
+
+ /* la position des boutons par rapport au champ input */
+.number-wrapper {
+   position: relative;
+}
+
+.number-wrapper:after,
+.number-wrapper:before {
+   position: absolute;
+   pointer-events: none;
+}
+
+
+/* le bouton moins du formulaire pour la peccomande */
+.number-wrapper:after {
+   color: white;
+   position: absolute;
+   content: "\2212";
+   z-index: 5;
+   background-color: #DC9F96;
+   width: 42px;
+   border-radius: 0 0 5px 0;
+   font-size: large;
+   z-index: 0;
+   top: 15px;
+   left: 44px;
+}
+
+
+/* le bouton plus du formulaire pour la précommande */
+.number-wrapper:before {
+   color: white;
+   position: absolute;
+   content: "\002B";
+   z-index: 5;
+   background-color: #DC9F96;
+   width: 42px;
+   left: 44px;
+   height: 30px;
+   border-radius: 0 5px 0 0;
+   border-bottom: solid 1px;
+   font-size: large;
+   z-index: 5;
+}
 
  .bloc-fruit {
     padding: 15px;
@@ -120,6 +174,10 @@ p {
   justify-content: center;
   margin-top: 20px;
  }
+
+ .bouton-cder >p {
+   transform: translateX(36px) !important;
+   }
 
  .bloc-info {
     border-right: var(--second-texte) solid 1px;
