@@ -9,7 +9,8 @@ function theme_enqueue_styles() {
 /* HOOK FILTERS */
 // Fonction pour ajouter le bouton d'administration
 function ajouter_bouton_admin( $items, $args ) {
-    if ( is_user_logged_in() && $args->theme_location == 'main_menu' ) { // Vérifie si l'utilisateur est connecté et si le menu est celui que vous voulez modifier
+ 
+    if ( is_user_logged_in() && $args->theme_location == ('main_menu'|| 'mobile_menu')) { // Vérifie si l'utilisateur est connecté et si le menu est celui que vous voulez modifier
         $pos = strpos( $items, '</a>' ); // Trouve la fin du premier élément de menu
         $bouton_admin = '<li><a href="' . admin_url() . '">Admin</a></li>'; // Bouton d'administration à ajouter
         $items = substr_replace( $items, $bouton_admin, $pos + 4, 0 ); // Ajoute le bouton d'administration après le premier élément de menu
@@ -19,7 +20,6 @@ function ajouter_bouton_admin( $items, $args ) {
 
 // Hook pour ajouter la fonction à wp_nav_menu_items
 add_filter( 'wp_nav_menu_items', 'ajouter_bouton_admin', 10, 2 );
-
 
 
 
